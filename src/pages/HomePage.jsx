@@ -1,9 +1,12 @@
-import { RecipesList } from "../components";
+import { Loader, RecipesList } from "../components";
+import { useRecipes } from "../store";
 
 const HomePage = () => {
+    const loading = useRecipes((state) => state.loading)
+
     return (
         <div>
-            <RecipesList />
+            {!loading ? <Loader /> : <RecipesList />}
         </div>
     );
 }
