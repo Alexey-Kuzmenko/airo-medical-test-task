@@ -1,0 +1,14 @@
+.RecipesList {
+    width: 100%;
+    text-align: center;
+
+    margin: 0 auto;
+    padding-top: 30px;
+
+    &__innerFlexContainer {
+        width: 100%;
+        max-width: 1000px;
+        height: auto;
+        margin: 0 auto;
+    }
+}
